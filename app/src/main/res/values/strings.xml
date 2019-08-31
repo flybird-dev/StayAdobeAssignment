@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StayAdobe</string>
+    <string name="notes">Notes</string>
+    <string name="no_records_found">No records found</string>
+    <string name="check_image">check image</string>
+    <string name="write_here">Write here…</string>
+    <string name="new_note">New Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_updated">Note updated</string>
+    <string name="please_enter_note">Please enter note</string>
+</resources>

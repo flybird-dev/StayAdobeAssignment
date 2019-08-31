@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditNotesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar" />
+
+    <EditText
+        android:id="@+id/edt_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:layout_marginTop="@dimen/thirty_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:gravity="start"
+        android:inputType="text"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Done"
+        android:hint="@string/write_here" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirty_dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/check_image"
+            android:src="@drawable/ic_check_white" />
+    </LinearLayout>
+
+</RelativeLayout>
